@@ -1,0 +1,121 @@
+*{
+	margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.header{
+	background-color: #FFE850;
+	font-size: 3vh;
+}
+.header h2{
+	text-align: center;
+	color: black;
+	font-family: Lato,san-serif;
+	font-weight: 900;
+}
+.footer{
+	flex: 0 0 auto;
+	background-color:#FFE850; 
+	text-align: center;
+	padding: 0.5%;
+	height: 3%;
+	
+}
+.content{
+	flex: 1 0 auto;
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-areas: "col1 col2 col2 col4";
+}
+.col1{
+	grid-area: col1;
+	margin: 5% 0 0 3%;
+	border-left: 2px solid #FFE850;
+	height: 92%;
+	padding: 5% 0 0 2%;
+}
+.col1 h1{
+	font-family: 'Lato';
+	font-size: 10vh;
+	font-weight: 400;
+}
+.col1 h3{
+	font-family: 'Lato';
+	margin-left: 1%;
+	padding: 3% 10% 0 0;
+	font-size: 3vh;
+	font-weight: 400;
+	text-align: left;
+}
+.col2{
+	grid-area: col2;
+	position: relative;
+}
+.box-1{
+	position: absolute;
+	border-color: #FFE850;
+	border-style: solid;
+	margin: 3% 3% 3%;
+	padding: 2% 0 0 2%;
+	height: 92%;
+	width: 90%
+}
+.box-2{
+	position: absolute;
+	top: 1%;
+	left: -5%;
+	right: 10%;
+	border-color: black;
+	border-style: solid;
+	height: 95%;
+}
+.about{
+	margin: 5% 3% 0 1%;
+	padding: 0 0 2% 0%;
+	font-family: 'Lato', san-serif;
+	font-size: 2.1vh;
+	font-weight: 300;
+}
+.col3{
+	grid-area: col4;
+	position: relative;
+	margin: 5% 3% 0 0;
+	border-right: 2px solid black;
+	height: 95%;
+}
+.col3 img{
+	position: absolute;
+	height: 100%;
+	width: 99%;
+}
+.col3 h1{
+	font-family: 'Lato';
+	padding-right: 2%;
+	position: absolute;
+	top: 5%;
+	font-size: 10vh;
+	font-weight: 400;
+	z-index: 2;
+	text-align: right;
+}
+.col3 h3{
+	font-family: 'Lato';
+	padding: 2% 0 0 25%;
+	position: absolute;
+	top: 58%;
+	font-size: 3.5vh;
+	font-weight: 400;
+	z-index: 2;
+	margin-right: 2%;
+	text-align: right;
+}
+.form input, h3,select,button{
+	margin: 2% 0 1% 7%;
+	 
+}
